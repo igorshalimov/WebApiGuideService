@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href ="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="https://localhost:44386/api/guides">WebApiService</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://localhost:44386/api/guides/All">Сервис Справочников</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Сервис Данных</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Сервис Отчетов</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-5">
+        <main role="main">
+
+            <div class="container marketing mt-5">
+                @RenderBody()
+                <hr class="featurette-divider">          
+            </div>
+            <footer class="container">
+                <p>© 2020 Example, Inc.</p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
